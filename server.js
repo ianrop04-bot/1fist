@@ -96,7 +96,7 @@ app.get('/', (req, res) => {
             .upload-icon { font-size: 3rem; }
             .upload-text { color: #64748b; margin-top: 0.5rem; }
             .upload-hint { color: #94a3b8; font-size: 0.8rem; margin-top: 0.3rem; }
-            input[type="file"] { display: none; }
+            input[type="file"] { display: block; }
             
             .preview-container {
                 display: flex;
@@ -125,7 +125,7 @@ app.get('/', (req, res) => {
                 right: 2px;
                 background: #dc2626;
                 color: white;
-                border: none;
+                border: block;
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
@@ -140,7 +140,7 @@ app.get('/', (req, res) => {
                 font-size: 0.85rem;
                 color: #64748b;
                 margin-bottom: 1rem;
-                display: none;
+                display: block;
             }
             
             .btn {
@@ -263,10 +263,10 @@ app.get('/', (req, res) => {
                 <div class="upload-hint">Supports: JPG, PNG, GIF, WebP • Max 10MB each</div>
                 
             </div>
-            <input type="file" id="fileInput" accept="image/" >
+            <input type="file" id="fileInput" >
             <div class="file-count" id="fileCount"></div>
             <div class="preview-container" id="previewContainer"></div>
-            
+        
             <button class="btn" id="uploadBtn" onclick="uploadImages()" >
                 🚀 Upload & Get Links
             </button>
