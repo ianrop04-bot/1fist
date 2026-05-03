@@ -263,11 +263,11 @@ app.get('/', (req, res) => {
                 <div class="upload-hint">Supports: JPG, PNG, GIF, WebP • Max 10MB each</div>
                 
             </div>
-            <input type="file" id="fileInput" accept="image/" multiple>
+            <input type="file" id="fileInput" accept="image/" >
             <div class="file-count" id="fileCount"></div>
             <div class="preview-container" id="previewContainer"></div>
             
-            <button class="btn" id="uploadBtn" onclick="uploadImages()" disabled>
+            <button class="btn" id="uploadBtn" onclick="uploadImages()" >
                 🚀 Upload & Get Links
             </button>
             
