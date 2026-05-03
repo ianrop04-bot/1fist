@@ -261,9 +261,9 @@ app.get('/', (req, res) => {
                 <div class="upload-icon">📁</div>
                 <div class="upload-text">Click or Drag & Drop Images Here</div>
                 <div class="upload-hint">Supports: JPG, PNG, GIF, WebP • Max 10MB each</div>
-                <input type="file" id="fileInput" accept="image/*" multiple>
+                
             </div>
-            
+            <input type="file" id="fileInput" accept="image/" multiple>
             <div class="file-count" id="fileCount"></div>
             <div class="preview-container" id="previewContainer"></div>
             
